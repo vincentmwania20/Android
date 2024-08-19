@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashFragment">
+
+    <fragment
+        android:id="@+id/dashFragment"
+        android:name="com.example.sam.nav_fragment.DashFragment"
+        android:label="DashFragment" >
+        <action
+            android:id="@+id/action_dashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_dashFragment_to_expensesFragment"
+            app:destination="@id/expensesFragment" />
+        <action
+            android:id="@+id/action_dashFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+        <action
+            android:id="@+id/action_dashFragment_to_workersFragment"
+            app:destination="@id/workersFragment" />
+        <action
+            android:id="@+id/action_dashFragment_to_weatherFragment"
+            app:destination="@id/weatherFragment" />
+        <action
+            android:id="@+id/action_dashFragment_to_inventoryFragment"
+            app:destination="@id/inventoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.sam.nav_fragment.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/expensesFragment"
+        android:name="com.example.sam.nav_fragment.ExpensesFragment"
+        android:label="ExpensesFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.sam.nav_fragment.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.sam.nav_fragment.SettingFragment"
+        android:label="SettingFragment" />
+
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.sam.nav_fragment.NotesFragment"
+        android:label="NotesFragment" />
+    <fragment
+        android:id="@+id/workersFragment"
+        android:name="com.example.sam.nav_fragment.WorkersFragment"
+        android:label="WorkersFragment" />
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.example.sam.nav_fragment.WeatherFragment"
+        android:label="WeatherFragment" />
+    <fragment
+        android:id="@+id/inventoryFragment"
+        android:name="com.example.sam.nav_fragment.InventoryFragment"
+        android:label="InventoryFragment" />
+</navigation>
